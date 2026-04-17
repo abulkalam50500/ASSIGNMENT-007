@@ -17,6 +17,8 @@ const SmsCount = processData.filter((item)=>item.Intereaction=="sms");
 const VideoCount = processData.filter((item)=>item.Intereaction=="video");
 
 
+const total = CallCount.length + SmsCount.length + VideoCount.length;
+
   const data = [
     { name: "Call", value: CallCount.length },
     { name: "SMS", value: SmsCount.length },
@@ -30,24 +32,31 @@ const VideoCount = processData.filter((item)=>item.Intereaction=="video");
       <div className="max-w-[1110px] w-full mx-auto">
         <h2 className="text-[35px] ml-2 md:ml-1 md:text-[48px] font-bold">Friendship Analytics</h2>
         <div className="Chat-section mt-10 ">
-          <PieChart className="block mx-auto" width={400} height={400}>
-            <Pie
-              data={data}
-              dataKey="value"
-              nameKey="name"
-              cx="50%"
-              cy="50%"
-              innerRadius={70}
-              outerRadius={100}
-              paddingAngle={4}
-            >
-              {data.map((entry, index) => (
-                <Cell key={index} fill={COLORS[index]} />
-              ))}
-            </Pie>
 
-            <Tooltip />
-          </PieChart>
+          {total === 0 ? (
+    <p className="text-center text-gray-500 text-lg font-medium">
+      No data found
+    </p>
+  ) : (
+    <PieChart className="block mx-auto" width={400} height={400}>
+      <Pie
+        data={data}
+        dataKey="value"
+        nameKey="name"
+        cx="50%"
+        cy="50%"
+        innerRadius={70}
+        outerRadius={100}
+        paddingAngle={4}
+      >
+        {data.map((entry, index) => (
+          <Cell key={index} fill={COLORS[index]} />
+        ))}
+      </Pie>
+
+      <Tooltip />
+    </PieChart>
+  )}
         </div>
       </div>
     </div>

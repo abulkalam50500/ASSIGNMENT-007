@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Jessika Jural",
-    "picture": "/src/assets/Friends/dem.png",
+    "picture": "https://i.ibb.co.com/qYfLqH5r/dem.png",
     "email": "arafat.rahman@gmail.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Nusrat Jahan",
-    "picture": "/src/assets/Friends/Ellipse.png",
+    "picture": "https://i.ibb.co.com/XZFk90v0/Ellipse.png",
     "email": "nusrat.jahan@gmail.com",
     "days_since_contact": 10,
     "status": "almost due",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Tanvir Hasan",
-    "picture": "/src/assets/Friends/es.png",
+    "picture": "https://i.ibb.co.com/FkLygxhc/es.png",
     "email": "tanvir.hasan@gmail.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Sadia Islam",
-    "picture": "/src/assets/Friends/jemi.png",
+    "picture": "https://i.ibb.co.com/nND1HM6Q/jemi.png",
     "email": "sadia.islam@gmail.com",
     "days_since_contact": 21,
     "status": "overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Mahin Chowdhury",
-    "picture": "/src/assets/Friends/jaks.png",
+    "picture": "https://i.ibb.co.com/Y4bYWBj8/jaks.png",
     "email": "mahin.c@gmail.com",
     "days_since_contact": 13,
     "status": "almost due",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Farhana Akter",
-    "picture": "/src/assets/Friends/jemi.png",
+    "picture": "https://i.ibb.co.com/nND1HM6Q/jemi.png",
     "email": "farhana.akter@gmail.com",
     "days_since_contact": 7,
     "status": "on-track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Rafiul Karim",
-    "picture": "/src/assets/Friends/josi.png",
+    "picture": "https://i.ibb.co.com/hJZqxSgJ/josi.png",
     "email": "rafiul.karim@gmail.com",
     "days_since_contact": 16,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Jannatul Ferdous",
-    "picture": "/src/assets/Friends/nora.png",
+    "picture": "https://i.ibb.co.com/4nHYnjzk/nora.png",
     "email": "jannat.ferdous@gmail.com",
     "days_since_contact": 9,
     "status": "almost due",
