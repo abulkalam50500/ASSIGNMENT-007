@@ -1,16 +1,48 @@
-# React + Vite
+**Project Name:**
+KeenKeeper — Keep Your Friendships Alive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Short Description:**
+KeenKeeper is a friendship management web application that helps users stay connected with their friends by tracking interactions like calls, sms, and video calls. Users can view detailed friend profiles, log interactions with a single click, monitor communication history through a timeline, and analyze their relationship activity using visual statistics.
 
-Currently, two official plugins are available:
+**Technologies Used:**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* React.js
+* React Router
+* Context API
+* Tailwind CSS
+* DaisyUI
+* Recharts (for analytics & charts)
+* React Toastify (for notifications)
+* React Lucid icon
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Key Features:**
 
-## Expanding the ESLint configuration
+1. 📊 **Friendship Analytics Dashboard** — Visualize call, text, and video interactions using charts.
+2. ⏰ **Interaction Tracking & Timeline** — Log and monitor your communication history with each friend.
+3. 🎯 **Smart Reminder System** — Track “days since contact” and goals to stay connected consistently.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+**Key Features:**
+
+1. 👤 **Friend Management & Details View**
+
+   * View all friends in a card layout
+   * Access detailed profile with bio, tags, and contact info
+   * Perform quick interactions (Call, Text, Video)
+
+2. ⏱️ **Interaction Tracking & Timeline**
+
+   * Log interactions (call, SMS, video) instantly
+   * View complete interaction history
+   * Filter timeline by interaction type
+
+3. 📊 **Analytics & Status Dashboard**
+
+   * See total counts of calls, texts, and video interactions
+   * Visualize data using charts (Pie Chart)
+   * Track communication patterns easily
+
+4. 🔔 **Smart UI Feedback System**
+
+   * Instant toast notifications on interaction
