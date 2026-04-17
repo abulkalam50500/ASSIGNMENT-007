@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData, useParams } from "react-router";
-import { BellDot, ArchiveRestore, Trash,PhoneForwarded,MailMinus,Video  } from "lucide-react";
+
+import {
+  BellDot,
+  ArchiveRestore,
+  Trash,
+  PhoneForwarded,
+  MailMinus,
+  Video,
+} from "lucide-react";
+import { DataContext } from "../../context/DataProvider";
 
 const FriendDetail = () => {
   const { id } = useParams();
+  
+  const {handleInteraction,processData}= useContext(DataContext); 
+
+
 
   const AllFriend = useLoaderData();
 
   const FindFriend = AllFriend.find((friend) => friend.id == id);
 
-  console.log(FindFriend);
-
+ 
   const status_color = {
     "almost due": "badge badge-warning",
     overdue: "badge badge-error",
@@ -18,12 +30,12 @@ const FriendDetail = () => {
   };
 
   const formatDate = (date) => {
-  return new Date(date).toLocaleDateString("en-US", {
-    month: "short",
-    day: "2-digit",
-    year: "numeric"
-  });
-};
+    return new Date(date).toLocaleDateString("en-US", {
+      month: "short",
+      day: "2-digit",
+      year: "numeric",
+    });
+  };
 
   return (
     <div className="space-y-9">
@@ -106,7 +118,7 @@ const FriendDetail = () => {
 
               <div className="top-single-box p-3 shadow">
                 <h3 className="font-semibold text-[32px] text-[#244D3F] text-center">
-                   {FindFriend.goal}
+                  {FindFriend.goal}
                 </h3>
                 <p className="text-[#64748B] text-center pt-[2px]">
                   Goal (Days)
@@ -115,7 +127,6 @@ const FriendDetail = () => {
 
               <div className="top-single-box p-3 shadow">
                 <h3 className="font-semibold text-[32px] text-[#244D3F] text-center">
-                 
                   {formatDate(FindFriend.next_due_date)}
                 </h3>
                 <p className="text-[#64748B] text-center pt-[2px]">Next Due</p>
@@ -136,34 +147,26 @@ const FriendDetail = () => {
             </div>
 
             <div className="p-5 right-side-bottom  mt-5 shadow-sm rounded ">
-              <h3 className="text-[20px] font-medium text-[#244D3F]">Quick Check-In</h3>
+              <h3 className="text-[20px] font-medium text-[#244D3F]">
+                Quick Check-In
+              </h3>
 
-              <div className="grid grid-cols-3 p-1 gap-4">
-                  <div className="top-single-box  p-3 shadow">
-                   <PhoneForwarded className="block mx-auto" />
-                <p className=" text-center text-[18px] pt-[4px]">
-                 Call
-                </p>
+              <div className="grid grid-cols-3 p-1 mt-3 gap-4">
+                <div className="top-single-box  p-3 shadow" onClick={()=>handleInteraction(FindFriend,'call')}>
+                  <PhoneForwarded className="block mx-auto" />
+                  <p className=" text-center text-[18px] pt-[4px]">Call</p>
+                </div>
+
+                <div className="top-single-box p-3 shadow" onClick={()=>handleInteraction(FindFriend,'sms')}>
+                  <MailMinus className="block mx-auto" />
+                  <p className=" text-center text-[18px] pt-[4px]">Text</p>
+                </div>
+
+                <div className="top-single-box p-3 shadow" onClick={()=>handleInteraction(FindFriend,'video')}>
+                  <Video className="block mx-auto" />
+                  <p className=" text-center text-[18px] pt-[4px]">Video</p>
+                </div>
               </div>
-
-
-                  <div className="top-single-box p-3 shadow">
-                   <MailMinus className="block mx-auto" />
-                <p className=" text-center text-[18px] pt-[4px]">
-                 Text
-                </p>
-              </div>
-
-                  <div className="top-single-box p-3 shadow">
-                   <Video className="block mx-auto" />
-                <p className=" text-center text-[18px] pt-[4px]">
-                 Video
-                </p>
-              </div>
-
-              </div>
-
-
             </div>
           </div>
         </div>
