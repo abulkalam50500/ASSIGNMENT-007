@@ -25,7 +25,7 @@ const Footer = () => {
 
                  </div>
 
-                <div className='footer-bottom mt-5 flex justify-between items-center'>
+                <div className='footer-bottom mt-5 flex flex-col md:flex-row justify-between items-center'>
                     <p className='text-[#FAFAFA]/50'>© 2026 KeenKeeper. All rights reserved.</p>
                     <ul className='flex gap-5'>
                         <li className='text-[#FAFAFA]/50'><NavLink to="/">Privacy Policy</NavLink></li>

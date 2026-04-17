@@ -28,7 +28,7 @@ const VideoCount = processData.filter((item)=>item.Intereaction=="video");
   return (
     <div className="mt-10">
       <div className="max-w-[1110px] w-full mx-auto">
-        <h2 className="text-[48px] font-bold">Friendship Analytics</h2>
+        <h2 className="text-[35px] ml-2 md:ml-1 md:text-[48px] font-bold">Friendship Analytics</h2>
         <div className="Chat-section mt-10 ">
           <PieChart className="block mx-auto" width={400} height={400}>
             <Pie

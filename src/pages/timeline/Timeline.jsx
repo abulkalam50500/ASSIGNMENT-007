@@ -53,9 +53,9 @@ const HandleFilterTimeline = (e) => {
     <div className="mt-10">
       <div className="max-w-[1110px] w-full mx-auto">
         <div className="headline">
-          <h2 className="text-[48px] font-bold text-[#1F2937]">Timeline</h2>
+          <h2 className="text-[48px] pl-7 md:pl-1 font-bold text-[#1F2937]">Timeline</h2>
         </div>
-        <div className="sort mt-3">
+        <div className="sort mt-3 ml-4 md:ml-1">
           <select defaultValue="Sort" className="select" onChange={(e) => HandleFilterTimeline(e)}>
             <option disabled={true}>Sort</option>
             <option value="call">Call</option>

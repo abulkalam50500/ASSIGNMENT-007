@@ -1,6 +1,6 @@
 import React from "react";
 import { House, Clock5, ChartLine } from "lucide-react";
-import { NavLink } from "react-router";
+import { NavLink,Link } from "react-router";
 const Navbar = () => {
   const HomeLinks = (
     <>
@@ -55,10 +55,13 @@ const Navbar = () => {
             </svg>
           </label>
           <button className="text-xl">
-            <span className="font-extrabold text-[24px] text-[#1F2937]">
+            <Link to="/">
+              <span className="font-extrabold text-[24px] text-[#1F2937]">
               Keen
             </span>
             <span className="text-[#244D3F] font-semibold">Keeper</span>
+            </Link>
+          
           </button>
         </div>
 

@@ -16,9 +16,9 @@ const Friends = () => {
     return (
         <div className='mt-9'>
             <div className='max-w-[1110px] w-full mx-auto'>
-                 <h3 className='text-[24px] font-semibold text-[#1F2937]'>Your Friends</h3>
+                 <h3 className='text-[24px] pl-7 md:pl-1 font-semibold text-[#1F2937]'>Your Friends</h3>
 
-                <div className='friend-cards mt-3.5 grid grid-cols-4 gap-5'>
+                <div className='friend-cards mt-3.5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5'>
 
                     {
                         FriendData.map((friend,index)=><SingleFriend key={index} friend={friend} />)

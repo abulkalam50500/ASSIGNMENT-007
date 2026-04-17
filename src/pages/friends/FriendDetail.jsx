@@ -40,7 +40,7 @@ const FriendDetail = () => {
   return (
     <div className="space-y-9">
       <div className="firend-detail max-w-[1110px] w-full mx-auto">
-        <div className="friend-wrap grid grid-cols-[1fr_2fr] gap-5">
+        <div className="friend-wrap grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-5">
           <div className="left-sidebar">
             <div className="p-5 text-center shadow-sm rounded">
               <div className="friend-img flex justify-center">
@@ -105,8 +105,8 @@ const FriendDetail = () => {
             </div>
           </div>
 
-          <div className="right-sidebar">
-            <div className="right-side-top-grid grid grid-cols-3 gap-4">
+          <div className="right-sidebar mt-8 md:mt-2">
+            <div className="right-side-top-grid grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="top-single-box p-3 shadow">
                 <h3 className="font-semibold text-[32px] text-[#244D3F] text-center">
                   {FindFriend.days_since_contact}
