@@ -152,17 +152,17 @@ const FriendDetail = () => {
               </h3>
 
               <div className="grid grid-cols-3 p-1 mt-3 gap-4">
-                <div className="top-single-box  p-3 shadow" onClick={()=>handleInteraction(FindFriend,'call')}>
+                <div className="top-single-box  p-3 shadow cursor-pointer" onClick={()=>handleInteraction(FindFriend,'call')}>
                   <PhoneForwarded className="block mx-auto" />
                   <p className=" text-center text-[18px] pt-[4px]">Call</p>
                 </div>
 
-                <div className="top-single-box p-3 shadow" onClick={()=>handleInteraction(FindFriend,'sms')}>
+                <div className="top-single-box p-3 shadow cursor-pointer" onClick={()=>handleInteraction(FindFriend,'sms')}>
                   <MailMinus className="block mx-auto" />
                   <p className=" text-center text-[18px] pt-[4px]">Text</p>
                 </div>
 
-                <div className="top-single-box p-3 shadow" onClick={()=>handleInteraction(FindFriend,'video')}>
+                <div className="top-single-box p-3 shadow cursor-pointer" onClick={()=>handleInteraction(FindFriend,'video')}>
                   <Video className="block mx-auto" />
                   <p className=" text-center text-[18px] pt-[4px]">Video</p>
                 </div>

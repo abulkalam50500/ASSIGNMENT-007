@@ -1,30 +1,33 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState } from "react";
+import { toast } from "react-toastify";
 export const DataContext = createContext();
-const DataProvider = ({children}) => {
+const DataProvider = ({ children }) => {
+  const [processData, setProcessData] = useState([]);
 
-    const [processData,setProcessData] = useState([]);
+  const handleInteraction = (Friend, Interection) => {
+    const today = new Date().toISOString().split("T")[0];
 
-    const handleInteraction=(Friend,Interection)=>{
-const today = new Date().toISOString().split("T")[0];
-       
+    let UpdateIntereaction = {
+      ...Friend,
+      Intereaction: Interection,
+      IntereactionDate: today,
+    };
 
-        let UpdateIntereaction = {...Friend,'Intereaction':Interection,'IntereactionDate':today}
+    
 
-        const newUpdateFriend = [...processData,UpdateIntereaction];
+    const newUpdateFriend = [...processData, UpdateIntereaction];
 
-        setProcessData(newUpdateFriend);
-        
+    setProcessData(newUpdateFriend);
 
-    }
+    toast.success(`${Interection} with ${Friend.name}`);
+  };
 
+  const data = {
+    handleInteraction,
+    processData,
+  };
 
-
-    const data = {
-        handleInteraction,
-        processData
-    }
-
-    return <DataContext.Provider value={data}>{children}</DataContext.Provider>
+  return <DataContext.Provider value={data}>{children}</DataContext.Provider>;
 };
 
 export default DataProvider;
