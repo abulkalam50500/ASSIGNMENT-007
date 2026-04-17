@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "Arafat Rahman",
-    "picture": "/src/assets/Friends/friend1.jpg",
+    "name": "Jessika Jural",
+    "picture": "/src/assets/Friends/dem.png",
     "email": "arafat.rahman@gmail.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Nusrat Jahan",
-    "picture": "/src/assets/Friends/friend2.jpg",
+    "picture": "/src/assets/Friends/Ellipse.png",
     "email": "nusrat.jahan@gmail.com",
     "days_since_contact": 10,
     "status": "almost due",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Tanvir Hasan",
-    "picture": "/src/assets/Friends/friend3.jpg",
+    "picture": "/src/assets/Friends/es.png",
     "email": "tanvir.hasan@gmail.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Sadia Islam",
-    "picture": "/src/assets/Friends/friend4.jpg",
+    "picture": "/src/assets/Friends/jemi.png",
     "email": "sadia.islam@gmail.com",
     "days_since_contact": 21,
     "status": "overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Mahin Chowdhury",
-    "picture": "/src/assets/Friends/friend5.jpg",
+    "picture": "/src/assets/Friends/jaks.png",
     "email": "mahin.c@gmail.com",
     "days_since_contact": 13,
     "status": "almost due",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Farhana Akter",
-    "picture": "/src/assets/Friends/friend6.jpg",
+    "picture": "/src/assets/Friends/jemi.png",
     "email": "farhana.akter@gmail.com",
     "days_since_contact": 7,
     "status": "on-track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Rafiul Karim",
-    "picture": "/src/assets/Friends/friend7.jpg",
+    "picture": "/src/assets/Friends/josi.png",
     "email": "rafiul.karim@gmail.com",
     "days_since_contact": 16,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Jannatul Ferdous",
-    "picture": "/src/assets/Friends/friend8.jpg",
+    "picture": "/src/assets/Friends/nora.png",
     "email": "jannat.ferdous@gmail.com",
     "days_since_contact": 9,
     "status": "almost due",
