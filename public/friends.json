@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Rahman",
+    "picture": "/src/assets/Friends/friend1.jpg",
+    "email": "arafat.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We studied computer science together at university. Always up for late night coding and tea.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "/src/assets/Friends/friend2.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["school", "best friend"],
+    "bio": "School friend since class 6. We still share everything from life updates to random memes.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "picture": "/src/assets/Friends/friend3.jpg",
+    "email": "tanvir.hasan@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["office", "gym buddy"],
+    "bio": "Met at work. We go to the gym together and motivate each other to stay consistent.",
+    "goal": 14,
+    "next_due_date": "2026-04-26"
+  },
+  {
+    "id": 4,
+    "name": "Sadia Islam",
+    "picture": "/src/assets/Friends/friend4.jpg",
+    "email": "sadia.islam@gmail.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["university", "group project"],
+    "bio": "Worked on multiple university projects together. Super creative and hardworking.",
+    "goal": 14,
+    "next_due_date": "2026-03-28"
+  },
+  {
+    "id": 5,
+    "name": "Mahin Chowdhury",
+    "picture": "/src/assets/Friends/friend5.jpg",
+    "email": "mahin.c@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["neighbor", "childhood friend"],
+    "bio": "Grew up in the same neighborhood. Used to play ক্রিকেট every evening.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 6,
+    "name": "Farhana Akter",
+    "picture": "/src/assets/Friends/friend6.jpg",
+    "email": "farhana.akter@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["colleague", "design team"],
+    "bio": "Designer colleague. We collaborate on UI/UX projects and share creative ideas.",
+    "goal": 14,
+    "next_due_date": "2026-04-24"
+  },
+  {
+    "id": 7,
+    "name": "Rafiul Karim",
+    "picture": "/src/assets/Friends/friend7.jpg",
+    "email": "rafiul.karim@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["football", "friend circle"],
+    "bio": "Weekend football teammate. Always energetic and fun to hang out with.",
+    "goal": 14,
+    "next_due_date": "2026-04-02"
+  },
+  {
+    "id": 8,
+    "name": "Jannatul Ferdous",
+    "picture": "/src/assets/Friends/friend8.jpg",
+    "email": "jannat.ferdous@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["online friend", "tech community"],
+    "bio": "Met through a tech community. We often discuss programming and career growth.",
+    "goal": 14,
+    "next_due_date": "2026-04-21"
+  }
+]
