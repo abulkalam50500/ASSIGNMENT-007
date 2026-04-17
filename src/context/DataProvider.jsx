@@ -5,10 +5,10 @@ const DataProvider = ({children}) => {
     const [processData,setProcessData] = useState([]);
 
     const handleInteraction=(Friend,Interection)=>{
-
+const today = new Date().toISOString().split("T")[0];
        
 
-        let UpdateIntereaction = {...Friend,'Intereaction':Interection}
+        let UpdateIntereaction = {...Friend,'Intereaction':Interection,'IntereactionDate':today}
 
         const newUpdateFriend = [...processData,UpdateIntereaction];
 
