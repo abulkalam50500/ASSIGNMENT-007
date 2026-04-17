@@ -8,7 +8,7 @@ const Navbar = () => {
         <NavLink to="/" className={({isActive })=> isActive
             ? "bg-white lg:bg-[#244D3F] rounded text-[#64748B] lg:text-white p-[7px] flex items-center gap-1"
             : "text-[#64748B] font-medium flex items-center gap-1"}>
-          <House></House> Home 
+          <House></House> Home es
         </NavLink>
       </li>
       <li >
